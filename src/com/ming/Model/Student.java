@@ -1,4 +1,4 @@
-package com.Model;
+package com.ming.Model;
 
 public class Student {
     private int id;

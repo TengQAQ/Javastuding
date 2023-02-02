@@ -1,9 +1,9 @@
 package com.ming.test;
 
-import com.ming.test.sort.BubblingSort;
-import com.ming.test.sort.InsertSort;
-import com.ming.test.sort.SelectSort;
-import com.ming.test.sort.ShellSort;
+import com.ming.sort.BubblingSort;
+import com.ming.sort.InsertSort;
+import com.ming.sort.SelectSort;
+import com.ming.sort.ShellSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -22,7 +22,6 @@ public class test {
         int[] bubblingints = Arrays.copyOf(ints,ints.length);
         BubblingSort bubblingsort = new BubblingSort();
 //        bubblingsort.starsort(bubblingints);
-
         int[] selcetints = Arrays.copyOf(ints,ints.length);
         SelectSort selectSort = new SelectSort();
 //        selectSort.starsort(selcetints);

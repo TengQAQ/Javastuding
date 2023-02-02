@@ -1,4 +1,4 @@
-package com.io;
+package com.ming.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

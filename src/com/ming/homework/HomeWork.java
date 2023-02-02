@@ -1,7 +1,7 @@
-package com.homework;
+package com.ming.homework;
 
 
-import com.Model.Student;
+import com.ming.Model.Student;
 
 import java.util.Arrays;
 import java.util.List;

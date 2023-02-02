@@ -1,4 +1,4 @@
-package com.ming.test.sort;
+package com.ming.sort;
 
 public class ShellSort extends BaseSort{
     @Override

@@ -1,6 +1,4 @@
-package com.ming.test.sort;
-
-import java.util.Arrays;
+package com.ming.sort;
 
 public class InsertSort extends BaseSort{
     @Override

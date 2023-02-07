@@ -7,11 +7,11 @@ public class QuickSort extends BaseSort{
     public int getmid(int[] array,int low, int high){
         int target = array[low];
         while (low < high){
-            while (array[high] >= target){
+            while (array[high] >= target && low < high){
                 high--;
             }
             array[low] = array[high];
-            while (array[low] <= target){
+            while (array[low] <= target && low < high){
                 low++;
             }
             array[high] = array[low];
@@ -23,8 +23,8 @@ public class QuickSort extends BaseSort{
     public void quicklySort(int[] array,int low,int high){
         if (high>low){
             int mid = getmid(array,low,high);
-            getmid(array,low,mid - 1);
-            getmid(array,mid + 1,high);
+            quicklySort(array,low,mid - 1);
+            quicklySort(array,mid + 1,high);
         }
     }
 

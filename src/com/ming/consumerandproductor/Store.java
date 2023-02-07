@@ -15,9 +15,23 @@ public class Store {
             }
         }else {
             aQueue.offer(bread);
-            System.out.println(Thread.currentThread().getName() + "已经向" + "");
+            System.out.println(Thread.currentThread().getName() + "已经生产秒爆" + bread.toString());
         }
         notifyAll();
+    }
+
+    public synchronized void sellBread(){
+        if (aQueue.isEmpty()){
+            try {
+                wait();
+            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+            }
+        }else {
+            aQueue.poll();
+            System.out.println(Thread.currentThread().getName() + "已经销售了面包。" + "当前数量：" + aQueue.size());
+        }
+
     }
 
 }

@@ -1,11 +1,7 @@
-package com.ming.test;
+package com.ming.sort.test;
 
-import com.ming.sort.BubblingSort;
-import com.ming.sort.InsertSort;
-import com.ming.sort.SelectSort;
-import com.ming.sort.ShellSort;
+import com.ming.sort.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -31,9 +27,13 @@ public class test {
         InsertSort insertSort = new InsertSort();
 //        insertSort.starsort(insertints);
 
-        int[] shelltints = Arrays.copyOf(ints,ints.length);
-        ShellSort sort = new ShellSort();
-        sort.starsort(shelltints);
+//        int[] shelltints = Arrays.copyOf(ints,ints.length);
+//        ShellSort sort = new ShellSort();
+//        sort.starsort(shelltints);
+
+        int[] quickints = Arrays.copyOf(ints,ints.length);
+        QuickSort quickSort = new QuickSort();
+        quickSort.starsort(quickints);
     }
 
     static void test001(){
